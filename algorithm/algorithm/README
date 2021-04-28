@@ -1,7 +1,0 @@
-Run Matlab.
-Change directory to F-SOBI.
-
-type example...
-
-The f-SOBI algorithm is in fsobi.m
-Comments should be sufficient to explain how it can be used.
