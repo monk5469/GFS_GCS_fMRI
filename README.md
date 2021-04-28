@@ -23,4 +23,6 @@ Simulaed experiment steps
     ii) 'minCNR = 5;  maxCNR = 5.5;' to 'minCNR = 0.65;  maxCNR = 2;' in lin. 238
   (5) run 'run_NoMotion.m'.
   (6) Find the output folder and move '*.nii' into created subfolders 'sub0*'
-2. Algorithm complexity analysis
+2. Complexity analysis of four algorithms
+  (1) Add a folder '\algorithm' to 'set path'.
+  (2) Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 98 
