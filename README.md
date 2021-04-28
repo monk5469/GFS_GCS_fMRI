@@ -24,5 +24,35 @@ Simulaed experiment steps
   (5) run 'run_NoMotion.m'.
   (6) Find the output folder and move '*.nii' into created subfolders 'sub0*'
 2. Complexity analysis of four algorithms
-  (1) Add a folder '\algorithm' to 'set path'.
-  (2) Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 98 
+  Add a folder '\algorithm' to 'set path'.
+  (1) Time complexity analysis
+  Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 112 
+    mento = 500;
+    TimeComplexity(data,ICA_Options,mento);
+  (2) Multiplicative times analysis
+    Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 112
+    MULtimes(data,ICA_Options);
+  (3) Separation error
+    i) FastICA
+      Find a file ‘icatb_calculateICA.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 252
+      locerror(icasig);
+    ii) GFS
+      Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 112(Comment codes in lin. 113-116)
+      [A, W, icasig_tmp] = fsobi(data, size(data,1));   
+      icasig_tmp = real(icasig_tmp);            
+      W = real(W);            
+      A = real(A);
+    iii) GCS
+      Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 112(Comment codes in lin. 113-116)
+      [A, W, icasig_tmp] = csobi(data, size(data,1));   
+      icasig_tmp = real(icasig_tmp);            
+      W = real(W);            
+      A = real(A);
+    iv) SOBI
+      Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 112(Comment codes in lin. 113-116)
+      [A, W, icasig_tmp] = sobi(data, size(data,1));   
+      icasig_tmp = real(icasig_tmp);            
+      W = real(W);            
+      A = real(A);
+      
+  Run a file, ‘icatb_runAnalysis.m’ in a folder ‘gift\GroupICATv4.0b\icatb\icatb_analysis_functions’
