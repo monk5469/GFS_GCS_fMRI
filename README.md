@@ -26,24 +26,28 @@ Simulaed data experiment steps
 2. Complexity analysis of four algorithms
   Add a folder '\algorithm' to 'set path'.
   (1) Time complexity analysis
-  Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 112 
+  Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 112 
     mento = 500;
     TimeComplexity(data,ICA_Options,mento);
+    Run 'gift.m', and then click 'Setup ICA annaalysis' to set up parameters and then click 'Run Analysis'.
   (2) Multiplicative times analysis
-    Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 112
+    Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 112
     MULtimes(data,ICA_Options);
+    Run a file, ‘icatb_runAnalysis.m’ in a folder ‘gift\GroupICATv4.0b\icatb\icatb_analysis_functions’
   3. Separation error
     i) FastICA
-      Find a file ‘icatb_calculateICA.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 252
+      Find a file ‘icatb_calculateICA.m’ in a folder ‘GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 252
       locerror(icasig);
+      Run a file, ‘icatb_runAnalysis.m’ in a folder ‘gift\GroupICATv4.0b\icatb\icatb_analysis_functions’
     ii) GFS
-      Find a file ‘icatb_calculateICA.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 252
+      Find a file ‘icatb_calculateICA.m’ in a folder ‘GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 252
       locerror(icasig);
-      Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 112(Comment codes in lin. 113-116)
+      Find a file ‘icatb_icaAlgorithm.m’ in a folder ‘GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 112(Comment codes in lin. 113-116)
       [A, W, icasig_tmp] = fsobi(data, size(data,1));   
       icasig_tmp = real(icasig_tmp);            
       W = real(W);            
       A = real(A);
+      Run a file, ‘icatb_runAnalysis.m’ in a folder ‘gift\GroupICATv4.0b\icatb\icatb_analysis_functions’
     iii) GCS
       Find a file ‘icatb_calculateICA.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 252
       locerror(icasig);
@@ -52,6 +56,7 @@ Simulaed data experiment steps
       icasig_tmp = real(icasig_tmp);            
       W = real(W);            
       A = real(A);
+      Run a file, ‘icatb_runAnalysis.m’ in a folder ‘gift\GroupICATv4.0b\icatb\icatb_analysis_functions’
     iv) SOBI
       Find a file ‘icatb_calculateICA.m’ in a folder ‘gift\GroupICATv4.0b\icatb\ icatb_analysis_functions’, and add the following codes to lin. 252
       locerror(icasig);
@@ -60,9 +65,7 @@ Simulaed data experiment steps
       icasig_tmp = real(icasig_tmp);            
       W = real(W);            
       A = real(A);
-      
-  Run a file, ‘icatb_runAnalysis.m’ in a folder ‘gift\GroupICATv4.0b\icatb\icatb_analysis_functions’
-  
+      Run a file, ‘icatb_runAnalysis.m’ in a folder ‘gift\GroupICATv4.0b\icatb\icatb_analysis_functions’
   
 Measured data experiment steps
 1. The download address of measured data is https://trendscenter.org/trends/software/gift/data/example_subjects.zip
