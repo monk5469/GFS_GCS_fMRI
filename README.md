@@ -98,7 +98,7 @@ Measured data experiment steps
     
 
 Reference
-[1]H. Wu, D. Li, M. Lu, Y. Zeng. fMRI Activations via Low-complexity Second-Order Inverse-Sparse-Transform Blind Separation.
+[1]H. Wu, D. Li, M. Lu, Y. Zeng. fMRI Activations via Low-complexity Second-Order Inverse-Sparse-Transform Blind Separation.Digital Signal Processing，(2021):103137.
 [2]E.B. Erhardt, S. Rachakonda, E.J. Bedrick, E.A. Allen, T. Adali, V.D. Calhoun. Comparison of multi‐subject ICA methods for analysis of fMRI data. Human brain mapping, 32(12) (2011): 2075-2095.
 [3]E.B. Erhardt, E.A. Allen, Y. Wei, T. Eichele, V.D. Calhoun. SimTB, a simulation toolbox for fMRI data under a model of spatiotemporal separability. Neuroimage, 59(4) (2012): 4160-4167.
 [4]D. Nuzillard, J.M. Nuzillard. Second-order blind source separation in the Fourier space of data. Signal processing, 83(3) (2003): 627-631.
